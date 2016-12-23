@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:pointsview="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.demo.pointsview.MainActivity">
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/activity_main_viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="270dp" />
+
+    <com.lch.pointsview.PointsView
+        android:id="@+id/activity_main_pointview"
+        android:layout_width="match_parent"
+        android:layout_height="15dp"
+        android:layout_alignBottom="@id/activity_main_viewpager"
+        pointsview:selector_resource="@drawable/points_selector" /><!--这块设置一下图片的selector，用enabled属性-->
+</RelativeLayout>
